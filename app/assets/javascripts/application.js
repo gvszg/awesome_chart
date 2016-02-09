@@ -5,4 +5,4 @@
 //= require jquery.min
 //= require d3
 //= require assay
-//= require_tree .
+//= require_tree ./application
