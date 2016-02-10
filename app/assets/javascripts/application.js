@@ -6,4 +6,5 @@
 //= require d3
 //= require assay
 //= require d3pie.min
+//= require liquid
 //= require_tree ./application

@@ -1,0 +1,27 @@
+<style>
+  .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+  .row:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .center {
+    display: inline-block;
+    vertical-align: middle;
+  }
+</style>
+<div class="wrapper">
+  <div class="row">
+    <div class="center container col-xs-4 col-md-9">
+      <!-- OPTIMIZE -->
+
+      <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
+      <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
+      <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+      <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
+      <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
+      <svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg>
+    </div>
+  </div>
+</div>
