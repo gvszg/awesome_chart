@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#index'
+  root 'pages#home'
   
   resources :liquid_charts, only: %i(index)
   resources :pie_charts, only: %i(index)
