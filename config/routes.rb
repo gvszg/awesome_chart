@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
-  root 'biocharts#index'
-  resources :biocharts, only: [:index]
-  namespace :dashboard do    
-    resources :manager
+  root 'pages#index'
+  
+  resources :liquid_charts, only: %i(index)
+  resources :pie_charts, only: %i(index)
+  resources :line_charts, only: %i(index)
+  resources :assay_charts, only: %i(index)
+  
+  namespace :dashboard do
+    root action: :home
+    resources :managers
+    resources :assay_charts
+    resources :pie_charts
+    resources :line_charts
+    resources :liquid_charts
   end
 end
