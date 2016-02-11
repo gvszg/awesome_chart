@@ -1,5 +1,5 @@
-class BiochartsController < ApplicationController
-  layout 'admin'
+class AssayChartsController < ApplicationController
+  layout 'public'
   
   def index
   end
