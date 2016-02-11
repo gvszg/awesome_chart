@@ -1,3 +1,16 @@
+<style>
+  .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+  .row:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .center {
+    display: inline-block;
+    vertical-align: middle;
+  }
+</style>
 <!-- Start Here -->
 <!-- Header Wrapper -->
 <div class="wrapper style1">
@@ -35,24 +48,27 @@
     <section>
       <header class="major">
 
-        <h2 class="text-center">Assay Chart</h2>
+        <h2 class="text-center">Liquid Chart</h2>
         <br>
         <!-- FIXME -->
         <!-- Chart Content -->
         <div class="row">
-          <div class="public-assay col-sm-6 col-xs-12">
-            <div class="container">            
-              <div id="statisticsCharts">
-                <div class="container padding-top-l">
-                  <p  style="color:#07418F;margin-left:70px;margin-right:60px;font-size:11px; text-decoration:bold; ">Welcome to the new Summary Page. This page displays summary statistics regarding the data indexed by LIFEwrx.  Statistics are currently calculated only for those assays for which normalized perturbation data is available (9 out of 13 assays searchable in LIFEwrx).  Help is available by clicking on the help icon next to Bioassays.  All feedback is welcome and can be provided by clicking the "Provide Feedback" tab at the right side of the page.</p>
-                  <div id="assayStats" class="chart-space col-md-offset-2" style="width: 1200px;">                  
-                    <div id="participantChart"></div>
-                  </div>
-                </div>
+          <div class="wrapper">
+            <div class="row">
+              <div class="center container col-xs-4 col-md-9">
+                <!-- OPTIMIZE -->
+
+                <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
+                <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
+                <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+                <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
+                <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
+                <svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
+      </div>
 
     </section>
   </div>
