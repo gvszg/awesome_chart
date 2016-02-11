@@ -35,20 +35,16 @@
     <section>
       <header class="major">
 
-        <h2 class="text-center">Assay Chart</h2>
+        <h2 class="text-center">Pie Chart</h2>
         <br>
         <!-- FIXME -->
         <!-- Chart Content -->
         <div class="row">
-          <div class="public-assay col-sm-6 col-xs-12">
-            <div class="container">            
-              <div id="statisticsCharts">
-                <div class="container padding-top-l">
-                  <p  style="color:#07418F;margin-left:70px;margin-right:60px;font-size:11px; text-decoration:bold; ">Welcome to the new Summary Page. This page displays summary statistics regarding the data indexed by LIFEwrx.  Statistics are currently calculated only for those assays for which normalized perturbation data is available (9 out of 13 assays searchable in LIFEwrx).  Help is available by clicking on the help icon next to Bioassays.  All feedback is welcome and can be provided by clicking the "Provide Feedback" tab at the right side of the page.</p>
-                  <div id="assayStats" class="chart-space col-md-offset-2" style="width: 1200px;">                  
-                    <div id="participantChart"></div>
-                  </div>
-                </div>
+          <div class="public-piechart col-sm-6 col-xs-12 col-md-offset-3">
+            <div class="container">
+              <div id="pieChart"></div>
+                <!-- OPTIMIZE -->
+                <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
               </div>
             </div>
           </div>
