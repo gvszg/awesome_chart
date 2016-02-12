@@ -12,6 +12,7 @@ gem "bcrypt"
 gem 'ckeditor'
 gem 'bootstrap-sass', '3.1.1.1'
 gem "font-awesome-rails"
+gem "paranoia", "~> 2.0" # 軟刪除
 
 group :development do
   gem "better_errors"

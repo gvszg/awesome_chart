@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :pie_charts, only: %i(index)
   resources :line_charts, only: %i(index)
   resources :assay_charts, only: %i(index)
+  resources :posts, only: %i(index show)
   
   namespace :dashboard do
     root action: :home
@@ -13,5 +14,6 @@ Rails.application.routes.draw do
     resources :pie_charts
     resources :line_charts
     resources :liquid_charts
+    resources :posts
   end
 end
