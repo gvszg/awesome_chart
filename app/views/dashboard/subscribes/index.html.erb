@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="side-body" style="margin-left:30px; padding-top:10px;">
+    <div class="page-title">
+      <span class="title">Subscribes Manage</span>                        
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <div class="title">Subscribes</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Subscribe Email</th>
+                  <th>Subscribe Amount</th>
+                  <th>Subscribe Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @subscribes.each do |subscribe| %>
+                  <tr>
+                  <th scope="row"><%= subscribe.id %></th>
+                  <td><%= mail_to subscribe.email %></td>
+                  <td><%= number_to_currency(subscribe.amount) %></td>
+                  <td><%= subscribe.created_at.strftime("%Y/%m/%d") %></td>
+                  </tr>
+                <% end %>
+                <tr>                  
+                  <th scope="row">1</th>
+                  <td>flyingonsky@tree.com</td>
+                  <td>$9.00</td>
+                  <td>2016/01/01</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>flyingonsky@tree.com</td>
+                  <td>$9.00</td>
+                  <td>2016/01/01</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>flyingonsky@tree.com</td>
+                  <td>$9.00</td>
+                  <td>2016/01/01</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
