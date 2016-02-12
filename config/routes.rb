@@ -15,5 +15,6 @@ Rails.application.routes.draw do
     resources :line_charts
     resources :liquid_charts
     resources :posts
+    resources :comments, only: [:index]
   end
 end
