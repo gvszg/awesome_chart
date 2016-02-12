@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="card-body">
-    <%= form_for @post do |f| %>
+    <%= form_for [:dashboard, @post] do |f| %>
       <div class="sub-title">
         <%= f.label :title, "Title" %>
       </div>
@@ -65,6 +65,11 @@
           <option value="UT">Utah</option>
           <option value="WY">Wyoming</option>      
         </select>
+      </div>
+      <br>
+      <div class="form-action">
+        <div class="sub-title">Submit</div>
+        <%= f.submit "Submit", class: "btn btn-success btn-lg" %>
       </div>
     <% end %>
   </div>

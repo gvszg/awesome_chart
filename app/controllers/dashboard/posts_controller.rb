@@ -1,8 +1,9 @@
 class Dashboard::PostsController < ApplicationController
   layout 'admin'
+  before_action :find_post, only: %i(show edit update destroy)
 
   def index
-    @posts = Post.all
+    @posts = Post.recent
   end
 
   def new
@@ -14,7 +15,7 @@ class Dashboard::PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to posts_path
+      redirect_to dashboard_posts_path
     else
       render :new
     end
@@ -23,18 +24,29 @@ class Dashboard::PostsController < ApplicationController
   def show
   end
 
-  def edit
+  def edit    
   end
 
-  def update
+  def update    
+    if @post.update(post_params)
+      redirect_to dashboard_posts_path
+    else
+      render :edit
+    end
   end
 
   def destroy
+    @post.destroy
+    redirect_to dashboard_posts_path
   end
 
   private
 
   def post_params
     params.require(:post).permit(:title, :description, :manager_id, category_ids: [])
+  end
+
+  def find_post
+    @post = Post.find(params[:id])
   end
 end

@@ -114,29 +114,38 @@
                 </li>
                 <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#dropdown-element">
-                    <span class="icon fa fa-desktop"></span><span class="title">Assay Chart</span>
+                    <span class="icon fa fa-desktop"></span><span class="title">Graph Manage</span>
                   </a>
                   <!-- Dropdown level 1 -->
                   <div id="dropdown-element" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li>
-                          <%= link_to "Draw Chart", dashboard_assay_charts_path %>
-                        </li>                        
+                          <%= link_to "Assay Chart", dashboard_assay_charts_path %>
+                        </li>
+                        <li>
+                          <%= link_to "Pie Chart", dashboard_pie_charts_path %>
+                        </li>
+                        <li>
+                          <%= link_to "Line Chart", dashboard_line_charts_path %>
+                        </li>
+                        <li>
+                          <%= link_to "Liquid Chart", dashboard_liquid_charts_path %>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </li>
                 <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#dropdown-table">
-                    <span class="icon fa fa-table"></span><span class="title">Pie Chart</span>
+                    <span class="icon fa fa-table"></span><span class="title">Post Manage</span>
                   </a>
                   <!-- Dropdown level 1 -->
                   <div id="dropdown-table" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li>
-                          <%= link_to "Draw Chart", dashboard_pie_charts_path %>
+                          <%= link_to "Post List", dashboard_posts_path %>
                         </li>                        
                         </li>
                       </ul>
@@ -145,14 +154,14 @@
                 </li>
                 <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#dropdown-form">
-                    <span class="icon fa fa-file-text-o"></span><span class="title">Line Chart</span>
+                    <span class="icon fa fa-file-text-o"></span><span class="title">Comment Manage</span>
                   </a>
                   <!-- Dropdown level 1 -->
                   <div id="dropdown-form" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li>
-                          <%= link_to "Draw Chart", dashboard_line_charts_path %>
+                          <%= link_to "Comment List" %>
                         </li>
                       </ul>
                     </div>
@@ -161,14 +170,14 @@
                 <!-- Dropdown-->
                 <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#component-example">
-                    <span class="icon fa fa-cubes"></span><span class="title">Liquid Chart</span>
+                    <span class="icon fa fa-cubes"></span><span class="title">Subscribe Manage</span>
                   </a>
                   <!-- Dropdown level 1 -->
                   <div id="component-example" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li>
-                          <%= link_to "Draw Chart", dashboard_liquid_charts_path %>
+                          <%= link_to "Subscribe List" %>
                         </li>
                       </ul>
                     </div>
