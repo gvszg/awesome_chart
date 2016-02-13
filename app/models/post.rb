@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
 
   enum status: { disable: 0, enable: 1 }
 
-  # before_create do
-  #   self.key = SecureRandom.hex
-  # end
+  before_create do
+    self.key = SecureRandom.hex
+  end
 end
