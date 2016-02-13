@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :line_charts, only: %i(index)
   resources :assay_charts, only: %i(index)
   resources :posts, only: %i(index show)
+  resources :comments, only: %i(new create)
   
   namespace :dashboard do
     root action: :home
