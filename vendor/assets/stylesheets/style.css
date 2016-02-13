@@ -371,11 +371,11 @@
 /* Tables */
 
 	table {
-		width: 100%;
+		max-width: 100%;
 	}
 
 		table.default {
-			width: 100%;
+			max-width: 100%;
 		}
 
 			table.default tbody tr {

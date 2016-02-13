@@ -76,7 +76,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart <span class="caret"></span></a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li class="profile-img">
-                                <img src="../img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
+                                <img src="/tmp/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
                             </li>
                             <li>
                                 <div class="profile-info">
@@ -177,7 +177,7 @@
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li>
-                          <%= link_to "Subscribe List" %>
+                          <%= link_to "Subscribe List", dashboard_subscribes_path %>
                         </li>
                       </ul>
                     </div>
@@ -186,27 +186,27 @@
                 <!-- Dropdown-->
                 <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#dropdown-example">
-                    <span class="icon fa fa-slack"></span><span class="title">Page Example</span>
+                    <span class="icon fa fa-slack"></span><span class="title">Page Path</span>
                   </a>
-                  <!-- Dropdown level 1 -->
+                   <!-- Dropdown level 1 -->
                   <div id="dropdown-example" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
-                        <li><a href="pages/login.html">Login</a>
-                        </li>
-                        <li><a href="pages/index.html">Landing Page</a>
+                        <!-- <li><a href="pages/login.html">Login</a>
+                        </li> -->
+                        <li><a href="<%= root_path %>">Public Page</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </li>
-                <!-- Dropdown-->
-                <li class="panel panel-default dropdown">
+                <!-- Dropdown -->
+                <!-- <li class="panel panel-default dropdown">
                   <a data-toggle="collapse" href="#dropdown-icon">
                     <span class="icon fa fa-archive"></span><span class="title">Icons</span>
-                  </a>
+                  </a> -->
                   <!-- Dropdown level 1 -->
-                  <div id="dropdown-icon" class="panel-collapse collapse">
+                  <!-- <div id="dropdown-icon" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav navbar-nav">
                         <li><a href="icons/glyphicons.html">Glyphicons</a>
@@ -221,7 +221,7 @@
                   <a href="license.html">
                       <span class="icon fa fa-thumbs-o-up"></span><span class="title">License</span>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <!-- /.navbar-collapse -->
