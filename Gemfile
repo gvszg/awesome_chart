@@ -15,10 +15,12 @@ gem "font-awesome-rails"
 gem "paranoia", "~> 2.0" # 軟刪除
 gem 'stripe'
 gem 'figaro'
+gem 'seo_helper', '~> 1.0'
 
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'meta_request'
   gem 'faker'
+  gem 'rack-mini-profiler'
 end

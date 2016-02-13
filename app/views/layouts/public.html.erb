@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>AwesomeChart</title>
+		<%= render_page_title_tag %>
+		<%= render_page_description_meta_tag %>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<%= stylesheet_link_tag    'application', media: 'all' %>    
-    <%= csrf_meta_tags %>
-    <%= yield :head %>
+    <%= csrf_meta_tags %>    
 	</head>
 	<body class="homepage">
 		<!-- Header Wrapper -->
@@ -78,5 +78,6 @@
 		</div>
 		<!-- Script -->
 		<%= javascript_include_tag 'application' %>
+		<%= yield :head %>
 	</body>
 </html>
