@@ -17,26 +17,7 @@
       </div>            
 
       <!-- Sidebar -->
-      <div id="sidebar" class="4u">
-        <section>
-          <header class="major">
-            <h2>Recent New</h2>
-          </header>                 
-          <ul class="default">
-            <% Post.enable.recent.each do |post| %>
-              <li><%= link_to post.title, post %></li>
-            <% end %>
-
-            <li><a href="#">Pellentesque lectus gravida blandit</a></li>
-            <li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-            <li><a href="#">Phasellus nibh pellentesque congue</a></li>
-            <li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-            <li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
-            <li><a href="#">Phasellus nibh pellentesque congue</a></li>
-            <li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-          </ul>
-        </section>        
-      </div>
+      <%= render "sidebar" %>
 
     </div>
   </div>

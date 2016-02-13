@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   layout 'public'
 
   def index
-    # @posts = Post.enable.recent
+    @posts = Post.enable.recent
   end
 
   def show
