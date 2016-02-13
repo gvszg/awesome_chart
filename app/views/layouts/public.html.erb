@@ -6,7 +6,8 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<%= stylesheet_link_tag    'application', media: 'all' %>    
-    <%= csrf_meta_tags %>		
+    <%= csrf_meta_tags %>
+    <%= yield :head %>
 	</head>
 	<body class="homepage">
 		<!-- Header Wrapper -->
@@ -31,7 +32,7 @@
 		          </li>
 		          <li><a href="<%= posts_path %>">News</a></li>
 		          <li><a href="<%= new_comment_path %>">Contact</a></li>
-		          <li><a href="#">Donate</a></li>
+		          <li><a href="<%= new_subscribe_path %>">Donate</a></li>
 		        </ul>
 		      </nav>
 		    </div>
