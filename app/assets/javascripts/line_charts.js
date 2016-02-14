@@ -37,6 +37,8 @@ d3.tsv("/tmp/data.tsv", type, function(error, data) {
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
+      // .attr("dx", ".71em")
+      // .style("text-anchor", "end")
       .call(xAxis);
 
   svg.append("g")
