@@ -1,6 +1,6 @@
 class Dashboard::PostsController < ApplicationController
   layout 'admin'
-  before_action :find_post, only: %i(show edit update destroy)
+  before_action :find_post, only: %i(show edit update destroy switch_to_enable switch_to_disable)
 
   def index
     @posts = Post.recent
@@ -37,6 +37,16 @@ class Dashboard::PostsController < ApplicationController
 
   def destroy
     @post.destroy
+    redirect_to dashboard_posts_path
+  end
+
+  def switch_to_enable
+    @post.update_column(:status, 1)
+    redirect_to dashboard_posts_path
+  end
+
+  def switch_to_disable
+    @post.update_column(:status, 0)
     redirect_to dashboard_posts_path
   end
 

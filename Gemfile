@@ -23,4 +23,9 @@ group :development do
   gem 'meta_request'
   gem 'faker'
   gem 'rack-mini-profiler'
+  gem "bullet"
+end
+
+group :production do
+  gem "rails_12factor"
 end

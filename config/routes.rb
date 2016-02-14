@@ -16,7 +16,12 @@ Rails.application.routes.draw do
     resources :pie_charts
     resources :line_charts
     resources :liquid_charts
-    resources :posts
+    resources :posts do
+      member do
+        post '/switch_to_enable', to: "posts#switch_to_enable"
+        post '/switch_to_disable', to: "posts#switch_to_disable"
+      end
+    end
     resources :comments, only: [:index]
     resources :subscribes, only: [:index]
   end
