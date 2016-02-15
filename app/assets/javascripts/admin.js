@@ -1,6 +1,5 @@
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
 //= require jquery.min
 //= require d3
