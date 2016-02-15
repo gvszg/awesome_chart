@@ -21,4 +21,3 @@
 //= require theme-github
 //= require app
 //= require index
-//= require_tree ./application
